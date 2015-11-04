@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languages>
+  <language id="en_GB" name="English (UK)">
+    <combatunit>
+      <unit name="Type &amp; Cost" tip="Unit type and cost information">
+        <unit name="Unit">
+          <unit name="Unit">Enter the name for the unit as it will appear in the UI and Civilopedia</unit>
+          <type name="Type"/>
+          <domain name="Domain">The domain (land, sea, air, hovers) of the unit</domain>
+          <primary name="Primary Role">Primary Role</primary>
+          <secondary name="Secondary Roles">Secondary Roles (if any)</secondary>
+          <combat name="Combat Class"/>
+          <special name="Special"/>
+        </unit>
+        <civ name="Civilization">
+          <civ name="Civilization" all="All civilizations" allTip="Unit is available to all civilizations"></civ>
+          <replaces name="Replaces Unit"/>
+        </civ>
+        <cost name="Cost">
+          <cost name="Cost">Cost (in hammers)</cost>
+          <hurry name="Hurry Cost Modifier"/>
+          <advanced name="Advanced Start Cost"/>
+          <faith name="Faith Cost">Cost to buy with faith</faith>
+          <requiresfaith name="Requires Faith Purchase Enabled"/>
+          <maintenance name="No Maintenance">Unit has no per turn gold cost (maintenance), typically missiles</maintenance>
+        </cost>
+      </unit>
+	  
+      <combat name="Combat &amp; Moves" tip="Unit combat and movement information">
+        <melee name="Melee Combat">
+          <combat name="Strength">Attack strength of melee units, also defensive strength of ranged units</combat>
+          <defensive name="Only defensive">Unit may not melee attack or capture cities</defensive>
+        </melee>
+        <ranged name="Ranged Combat">
+          <combat name="Ranged Strength"></combat>
+          <range name="Range">Attack range in tiles/hexes</range>
+          <setup name="Requires Setup">Must set-up before firing</setup>
+          <domain name="Attack Only In Domain"/>
+          <los name="Ignore Line Of Sight (los)">Units may fire at targets they cannot directly see, typically modern artillery and naval units</los>
+          <defense name="Ignore Building Defense"/>
+        </ranged>
+        <moves name="Movement">
+          <moves name="Moves"></moves>
+          <ignore name="Ignore Terrain">Ignore terrain cost</ignore>
+          <followup name="Follow-up">Can move after attacking</followup>
+          <immobile name="Immobile"/>
+          <suicide name="One use">Unit is consumed during its attack, typically missiles and atomic weapons</suicide>
+        </moves>
+        <aircraft name="Aircraft &amp; Missiles">
+          <range name="Intercept Range"/>
+          <recon name="Air Recon"/>
+          <nuke name="Nuke Damage Level">
+            <item value="-1" name="">No nuclear capablities</item>
+            <item value="1" name="A-Bomb">A-Bomb</item>
+            <item value="2" name="Nuclear Missile">Nuclear Missile</item>
+            <item value="0" name="Meltdown">Meltdown</item>
+          </nuke>
+          <special name="Special Cargo"/>
+        </aircraft>
+      </combat>
+	  
+      <text name="Civilopedia" tip="Unit help and civilopedia text">
+        <help name="Help">
+          <strategy name="Strategy"/>
+          <help name="Help"/>
+        </help>
+        <pedia name="Civilopedia">
+          <pedia name="Civilopedia"/>
+          <show name="Show in civilopedia">Uncheck to exclude the unit from the civilopedia</show>
+        </pedia>
+      </text>
+	  
+      <upgrades name="Upgrades" tip="Upgrades and Promotions">
+        <upgrades name="Upgrades">
+          <normal name="Normal Upgrade" default="No upgrade"/>
+          <goody name="Goody Hut Upgrade" default="No upgrade"/>
+        </upgrades>
+        <promotions name="Free Promotions">
+          <free name="Free Promotions">Promotions each unit will start with</free>
+        </promotions>
+      </upgrades>
+	  
+      <requirements name="Requirements" tip="Required technologies and resources">
+        <technologies name="Technologies">
+          <prereq name="Prereq Tech">Technology required to be able to train (build) the unit in a city</prereq>
+          <obsolete name="Obsolete Tech">Technology after which the unit can no longer be trained (built) in a city</obsolete>
+        </technologies>
+        <resources name="Resources">
+          <resources name="Required Resources">To specify more than 1 of each resource, you will need to edit the generated XML/SQL</resources>
+          <prereq name="Prereq Resources">Can only build the unit in a city with access to the required resources</prereq>
+        </resources>
+      </requirements>
+	  
+      <abilities name="Abilities" tip="Unit general abilities">
+        <abilities name="Abilities">
+          <found name="Found"/>
+          <abroad name="Found Abroad"/>
+          <pillage name="Pillage"/>
+          <pillagetech name="Pillage Prereq Tech"/>
+          <rival name="Rival Territory"/>
+          <nobad name="No Bad Goody Huts"/>
+        </abilities>
+        <work name="Work">
+          <rate name="Work Rate"/>
+          <builds name="Unit Builds"/>
+        </work>
+        <yields name="Yields">
+          <yield name="Yield From Kills"/>
+          <percent name="Percent Yield"></percent>
+        </yields>
+      </abilities>
+	  
+      <religion name="Religion" tip="Religion">
+        <religion name="Religion">
+          <spread name="Spreads Religion"/>
+          <remove name="Removes Religion"/>
+          <count name="Number of spreads"/>
+          <strength name="Strength of spreads"/>
+          <found name="Found Religion"/>
+          <enhanced name="Requires Enhanced Religion"/>
+          <prohibits name="Prohibits Spread"/>
+        </religion>
+      </religion>
+	  
+      <art name="Art" tip="Unit icons and model">
+        <model name="Model">
+          <model name="3D Model">Copy 3D model and related settings from standard unit</model>
+        </model>
+        <icons name="Icons">
+          <icon name="Icon"></icon>
+        </icons>
+        <flag name="3D Map Flag">
+          <flag name="Flag" default="Custom flag icon ..."></flag>
+          <icon/>
+        </flag>
+        <sv name="Strategic View">
+          <sv name="SV Icon" default="Custom SV icon ..."></sv>
+          <icon/>
+        </sv>
+      </art>
+	  
+      <xml name="XML" tip="XML for unit"/>
+      <sql name="SQL" tip="SQL for unit"/>
+    </combatunit>
+    <ui>
+      <actions>
+        <exit>Exit</exit>
+        <about>About ...</about>
+        <save>Save As ...</save>
+
+        <session>
+          <load>Load Session ...</load>
+          <save>Save Session ...</save>
+          <prefs>Preferences ...</prefs>
+        </session>
+      </actions>
+
+      <about>
+        <title>About ModTools</title>
+        <desc>CombatUnitBuilder - UI for creating Combat Units</desc>
+      </about>
+
+      <options>
+        <title>ModBuilder Preferences</title>
+        <homedir>User home:</homedir>
+        <dbdir>DB cache path:</dbdir>
+      </options>
+
+      <icons>
+        <text>Choose image</text>
+        <tip>Click to change</tip>
+        <select>Select</select>
+      </icons>
+      
+      <confirm>
+        <title>Confirm</title>
+        <prompt>Overwrite </prompt>
+      </confirm>
+    </ui>
+  </language>
+</languages>
