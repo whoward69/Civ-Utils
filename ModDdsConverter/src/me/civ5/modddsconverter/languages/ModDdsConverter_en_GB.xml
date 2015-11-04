@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languages>
+  <language id="en_GB" name="English (UK)">
+    <ddsconverter>
+      <images name="Image" tip="General images - DoM, Maps, Splashes, etc">
+        <types>
+          <type id="select">Select image type ...</type>
+          <type id="dom">Dawn of Man</type>
+          <type id="leader">Leader Scene</type>
+          <type id="map">Loading Map</type>
+          <type id="wonder">Wonder Splash</type>
+          <type id="era">Era Change</type>
+          <type id="policy">Policy Panel</type>
+          <type id="victory">Victory Screen</type>
+          <type id="custom">Custom</type>
+        </types>
+        
+        <ui>
+          <actions>
+            <open>Choose image ...</open>
+            <save>Save image as DDS ...</save>
+            <close>Close</close>
+          </actions>
+          
+          <resize>
+            <title>Image Manipulation</title>
+            <resizeAndClip>Resize and Clip</resizeAndClip>
+            <resizeOnly>Resize Only</resizeOnly>
+            <resizeCentre>Clip Centre</resizeCentre>
+            <resizeManual>Clip Manual</resizeManual>
+            <resizeNone>Use As Is</resizeNone>
+          </resize>
+          
+          <dxt>
+            <title>Image Compression</title>
+            <dxt1>DXT1/BC1</dxt1>
+            <dxt3>DXT3/BC2</dxt3>
+            <dxt5>DXT5/BC3</dxt5>
+          </dxt>
+        </ui>
+        
+        <comments>
+          <comment id="imageSize">Image is {0} x {1}</comment>
+          <comment id="formatSize">Target format is {0} x {1}</comment>
+          <comment id="badWidth">Image width ({0}) is not a multiple of 4</comment>
+          <comment id="badHeight">Image height ({0}) is not a multiple of 4</comment>
+          <comment id="mismatchWidth">Image width ({0}) does not match desired target width ({1})</comment>
+          <comment id="mismatchHeight">Image height ({0}) does not match desired target height ({1})</comment>
+          <comment id="selectImage">Please select an image</comment>
+          <comment id="selectFormat">Please select a target output format</comment>
+          <comment id="processing">Processing {0}</comment>
+          <comment id="writing">Writing {0}</comment>
+          <comment id="converted">Conversion of {0} to {1} took {2} seconds</comment>
+        </comments>
+      </images>
+      
+      <icons name="Icon" tip="Icons - Civs, Units, Buildings, etc">
+        <types>
+          <type id="select">Select icon type ...</type>
+          <type id="action">Action</type>
+          <type id="building">Building/Wonder</type>
+          <type id="civilization">Civilization</type>
+          <type id="civilizationalpha">Civilization (Alpha)</type>
+          <type id="font">Font Icon</type>
+          <type id="leader">Leader</type>
+          <type id="religion">Religion (Alpha)</type>
+          <type id="resource">Resource</type>
+          <type id="resourcesv">Resource SV</type>
+          <type id="technology">Technology</type>
+          <type id="unit">Unit</type>
+          <type id="unitflag">Unit Flag</type>
+          <type id="unitsv">Unit SV</type>
+          <type id="custom">Custom</type>
+        </types>
+
+        <ui>
+          <actions>
+            <open>Choose icon image ...</open>
+            <save>Save icon as DDS ...</save>
+            <close>Close</close>
+          </actions>
+          
+          <resize>
+            <title>Image Manipulation</title>
+            <resizeAndClip>Resize and Clip</resizeAndClip>
+            <resizeClip>Clip Centre</resizeClip>
+          </resize>
+          
+          <icon>
+            <title>Icon Sizes</title>
+            <mipmaps>MipMaps</mipmaps>
+          </icon>
+          
+          <progress>
+            <title>Save as DDS Icons</title>
+            <generating>Please wait, generating icons ...</generating>
+            <size>  ... {0} icon</size>
+          </progress>
+        </ui>
+        
+        <comments>
+          <comment id="imageSize">Image is {0} x {1}</comment>
+          <comment id="badWidth">Image width ({0}) is not a multiple of 4</comment>
+          <comment id="badHeight">Image height ({0}) is not a multiple of 4</comment>
+          <comment id="mismatch">Image is not square</comment>
+          <comment id="selectImage">Please select an image</comment>
+          <comment id="selectFormat">Please select a target output format</comment>
+          <comment id="processing">Processing {0}</comment>
+          <comment id="writing">Writing {0}</comment>
+          <comment id="converted">Conversion of {0} to {1}.dds took {2} seconds</comment>
+          <comment id="cancelled">Conversion of {0} to {1}.dds was cancelled</comment>
+        </comments>
+      </icons>
+
+      <atlas name="Atlas" tip="Icon Atlas">
+        <file>
+          <base>Atlas</base>
+        </file>
+        
+        <types>
+          <type id="select">Select icon type ...</type>
+          <type id="action">Action</type>
+          <type id="building">Building/Wonder</type>
+          <type id="civilization">Civilization</type>
+          <type id="civilizationalpha">Civilization (Alpha)</type>
+          <type id="font">Font Icon</type>
+          <type id="leader">Leader</type>
+          <type id="religion">Religion (Alpha)</type>
+          <type id="resource">Resource</type>
+          <type id="technology">Technology</type>
+          <type id="unit">Unit</type>
+          <type id="unitflag">Unit Flag</type>
+          <type id="custom">Custom</type>
+        </types>
+
+        <ui>
+          <actions>
+            <save>Save atlas as DDS ...</save>
+            <close>Close</close>
+          </actions>
+          
+          <icon>
+            <title>Icon Sizes</title>
+          </icon>
+          
+          <grid>
+            <title>Grid Size</title>
+            <rows>Rows</rows>
+            <cols>Cols</cols>
+          </grid>
+          
+          <progress>
+            <title>Save as DDS Atlas</title>
+            <generating>Please wait, generating atlas files ...</generating>
+            <size>  ... {0} icons</size>
+          </progress>
+        </ui>
+        
+        <comments>
+          <comment id="selectFormat">Please select a target output format</comment>
+          <comment id="processing">Processing {0}</comment>
+          <comment id="writing">Writing {0}</comment>
+          <comment id="converted">Conversion of {0} to {1}.dds took {2} seconds</comment>
+          <comment id="cancelled">Conversion of {0} to {1}.dds was cancelled</comment>
+        </comments>
+      </atlas>
+    </ddsconverter>
+    <ui>
+      <actions>
+        <exit>Exit</exit>
+        <about>About ...</about>
+        <save>Save As ...</save>
+
+        <image>Add Image</image>
+        <icon>Add Icon</icon>
+        <atlas>Add Atlas</atlas>
+
+        <session>
+          <load>Load Session ...</load>
+          <save>Save Session ...</save>
+          <prefs>Preferences ...</prefs>
+        </session>
+      </actions>
+
+      <about>
+        <title>About DdsConverter</title>
+        <desc>Utility for converting PNG/JPG files to DDS format</desc>
+      </about>
+
+      <options>
+        <title>DdsConverter Preferences</title>
+        <homedir>User home:</homedir>
+        <dbdir>DB cache path:</dbdir>
+      </options>
+
+      <confirm>
+        <title>Confirm</title>
+        <prompt>Overwrite </prompt>
+      </confirm>
+    </ui>
+  </language>
+</languages>

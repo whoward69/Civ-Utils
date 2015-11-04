@@ -1,0 +1,52 @@
+<configs>
+  <config type="images">
+    <types>
+      <type id="select"  width="-1"   height="-1"  format="0"/>
+      <type id="dom"     width="1024" height="768" format="3"/>
+      <type id="leader"  width="1600" height="900" format="3"/>
+      <type id="map"     width="360"  height="412" format="3"/>
+      <type id="wonder"  width="972"  height="568" format="3"/>
+      <type id="era"     width="924"  height="472" format="3"/>
+      <type id="policy"  width="192"  height="292" format="3"/>
+      <type id="victory" width="956"  height="532" format="3"/>
+      <type id="custom"  width="0"    height="0"   format="3"/>
+    </types>
+  </config>
+
+  <config type="icons">
+    <types>
+      <type id="select"/>
+      <type id="action"     square="true">                     64,     45                   </type>
+      <type id="building">                  256,      128, 80, 64,     45                   </type>
+      <type id="civilization">              256,      128, 80, 64,     45, 32               </type>
+      <type id="civilizationalpha">                            64, 48,     32, 24           </type>
+      <type id="font"       square="true">                                         22       </type>
+      <type id="leader">                    256,      128,     64                           </type>
+      <type id="religion">                            128, 80, 64, 48,     32, 24,     16   </type>
+      <type id="resource">                  256,           80, 64,     45                   </type>
+      <type id="resourcesv" mipmaps="true"> 256                                             </type>
+      <type id="technology">                256, 214, 128, 80, 64,     45                   </type>
+      <type id="unit">                      256,      128, 80, 64,     45                   </type>
+      <type id="unitflag">                                                 32               </type>
+      <type id="unitsv"     mipmaps="true">           128                                   </type>
+      <type id="custom">                                                                  0 </type>
+    </types>
+  </config>
+
+  <config type="atlas">
+    <types>
+      <type id="select"/>
+      <type id="action"     square="true">                     64,     45                   </type>
+      <type id="building">                  256,      128, 80, 64,     45                   </type>
+      <type id="civilization">              256,      128, 80, 64,     45, 32               </type>
+      <type id="civilizationalpha">                            64, 48,     32, 24           </type>
+      <type id="font"       square="true">                                         22       </type>
+      <type id="leader">                    256,      128,     64                           </type>
+      <type id="religion">                            128, 80, 64, 48,     32, 24,     16   </type>
+      <type id="resource">                  256,           80, 64,     45                   </type>
+      <type id="technology">                256, 214, 128, 80, 64,     45                   </type>
+      <type id="unit">                      256,      128, 80, 64,     45                   </type>
+      <type id="unitflag">                                                 32               </type>
+      <type id="custom">                                                                  0 </type>
+    </types>
+  </config></configs>
